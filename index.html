@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Hassan Syed Namwar">
+    <meta name="keywords" content="Hassan Syed Namwar, Personal Website, Portfolio, Projects, Contact">
+    <meta name="author" content="Hassan Syed Namwar">
+    <title>Hassan Syed Namwar | Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> <!-- Optional: Google Fonts -->
+    <link rel="icon" href="favicon.ico"> <!-- Optional: Favicon -->
+    <style>
+        /* Basic CSS for styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        nav {
+            background: #333;
+            padding: 1em;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header, section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            margin: 20px 0;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        #about, #projects, #contact {
+            padding: 40px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .projects-list {
+            list-style: none;
+            padding: 0;
+        }
+        .projects-list li {
+            padding: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home">
+        <div class="container">
+            <h1>Welcome to My Personal Website</h1>
+            <p>I'm Hassan Syed Namwar, a Computer Science and Economics enthusiast. Explore my projects, extracurricular activities, and get in touch!</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Hassan Syed Namwar, a passionate individual with a keen interest in technology and economics. I have experience in programming, data analysis, and research. My goal is to work on innovative projects that merge these fields, creating impactful solutions and driving change.</p>
+            <p>Recently, I attended the Labour Party Conference to campaign with <strong>"Send My Friend to School"</strong>, advocating for global education. I also lead several student societies, including:</p>
+            <ul>
+                <li>Junior Politics Society</li>
+                <li>Junior Business Society</li>
+                <li>Lower Computer Science Society</li>
+            </ul>
+            <p>Read my latest article in the Junior Politics Society Journal <a href="https://issuu.com/saintolaves/docs/junior_politics_journal_-_spring_2024/34" target="_blank">here</a>.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul class="projects-list">
+                <li><strong>Stock Analysis Tool:</strong> A web-based platform for analysing stock trends using industry information and market indicators.</li>
+                <li><strong>Space Settlement Design:</strong> A comprehensive design plan for a settlement on Callisto, focusing on infrastructure, automation, and human factors.</li>
+                <li><strong>Portfolio Website:</strong> A personal website showcasing my skills, projects, and experiences.</li>
+            </ul>
+            <p>Feel free to join my Discord server to discuss ideas and collaborate: <a href="https://discord.gg/dB7CGhkKJt" target="_blank">Discord Server</a>.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hassan Syed Namwar. All rights reserved.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/hassan-syed-namwar-h5n/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/hsn-squared" target="_blank">GitHub</a> | 
+            <a href="https://huggingface.co/h5n" target="_blank">Hugging Face</a> | 
+            <a href="mailto:hassansyednamwar@gmail.com">Email</a> | 
+            <a href="https://discord.gg/dB7CGhkKJt" target="_blank">Discord</a>
+        </p>
+    </footer>
+
+</body>
+</html>
