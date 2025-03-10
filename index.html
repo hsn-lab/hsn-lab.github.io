@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* Add the CSS styles here */
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 2em;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .rating input:checked ~ label,
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #ffc107;
+        }
+
+        .popup button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Syed Namwar - Personal Website</title>
@@ -229,7 +281,7 @@
                         <li>English (Native)</li>
                         <li>Urdu (Fluent)</li>
                         <li>German (A1/2)</li>
-                        <li>French (B1/2)</li>
+                        <li>French (A2/B1)</li>
                     </ul>
                 </div>
             </div>
@@ -386,5 +438,39 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<div class="popup" id="ratingPopup">
+    <h2>Rate Our Website</h2>
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+    </div>
+    <button onclick="submitRating()">Submit</button>
+</div>
+<script>
+    // JavaScript code
+    function showPopup() {
+        document.getElementById('ratingPopup').style.display = 'block';
+    }
+
+    function submitRating() {
+        const rating = document.querySelector('input[name="rating"]:checked');
+        if (rating) {
+            alert('Thank you for rating us ' + rating.value + ' stars!');
+            document.getElementById('ratingPopup').style.display = 'none';
+        } else {
+            alert('Please select a rating.');
+        }
+    }
+
+    setTimeout(showPopup, 10000);
+</script>
 </body>
 </html>
